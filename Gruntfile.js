@@ -1,13 +1,11 @@
 'use strict';
 
-const BUILD_FOLDER = '_build/';
-
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
     clean: {
-      build: [BUILD_FOLDER]
+      build: ['_build']
     },
 
     copy: {
@@ -17,7 +15,7 @@ module.exports = function(grunt) {
           src: [
             '*.html'
           ],
-          dest: BUILD_FOLDER
+          dest: '_build'
         }]
       },
       normalize: {
@@ -25,14 +23,23 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'node_modules/normalize.css/',
           src: ['normalize.css'],
-          dest: BUILD_FOLDER + 'css/'
+          dest: '_build/css/'
         }]
+      }
+    },
+
+    less: {
+      build: {
+        files: {
+          '_build/css/style.css': 'less/style.less'
+        }
       }
     }
   });
 
   grunt.registerTask('build', [
     'clean',
-    'copy'
+    'copy',
+    'less'
   ]);
 }
