@@ -1,6 +1,6 @@
 'use strict';
 
-const BUILD_FOLDER = '_build';
+const BUILD_FOLDER = '_build/';
 
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
@@ -18,6 +18,14 @@ module.exports = function(grunt) {
             '*.html'
           ],
           dest: BUILD_FOLDER
+        }]
+      },
+      normalize: {
+        files: [{
+          expand: true,
+          cwd: 'node_modules/normalize.css/',
+          src: ['normalize.css'],
+          dest: BUILD_FOLDER + 'css/'
         }]
       }
     }
