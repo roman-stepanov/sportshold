@@ -1,0 +1,18 @@
+{
+  "name": "sportshold",
+  "version": "1.0.0",
+  "description": "Главная страница интернет-магазина спортивной обуви",
+  "author": "Roman Stepanov",
+  "main": "index.js",
+  "scripts": {
+    "build": "grunt build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepanov-roman/sportshold.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stepanov-roman/sportshold/issues"
+  },
+  "homepage": "https://github.com/stepanov-roman/sportshold#readme"
+}
