@@ -1,0 +1,48 @@
+.help {
+  background-color: @clr_pink;
+}
+
+.help__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 70px 0px 70px 0px;
+  width: 1110px;
+}
+
+.help__text {
+  position: relative;
+  margin: 0;
+  padding: 0px 0px 0px 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 60px;
+    height: 42px;
+    background-image: url("../img/envelope.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.help__title {
+  color: @clr_white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.help__label {
+  color: @clr_white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
