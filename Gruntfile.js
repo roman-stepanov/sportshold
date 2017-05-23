@@ -14,7 +14,8 @@ module.exports = function(grunt) {
           expand: true,
           src: [
             '*.html',
-            'img/**.{png,jpg}'
+            'img/**.{png,jpg}',
+            'fonts/**.woff'
           ],
           dest: '_build'
         }]
