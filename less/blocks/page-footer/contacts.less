@@ -1,0 +1,59 @@
+.contacts {
+  width: 350px;
+  // background-color: lightgreen; //
+}
+
+.contacts__item {
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 15px 23px 75px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 55px;
+    height: 55px;
+    background-color: @clr_pink;
+    background-image: url("../img/small-icons.png");
+    background-repeat: no-repeat;
+  }
+
+  &--phone::before {
+    background-position: -112px 7px;
+  }
+
+  &--email::before {
+    background-position: -152px 7px;
+  }
+
+  &--address::before {
+    background-position: -192px 7px;
+  }
+}
+
+.contacts__title {
+  color: @clr_pink;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__text {
+  color: @clr_white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    color: @clr_pink;
+    text-decoration: underline;
+  }
+}
