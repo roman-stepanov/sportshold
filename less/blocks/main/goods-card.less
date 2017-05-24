@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   margin: 0px 0px 30px 0px;
-  padding: 20px 27px 20px 27px;
+  padding: 23px 26px 22px 26px;
   border: 1px solid @clr_gray;
-  width: 200px;
-  min-height: 307px;
+  width: 201px;
+  min-height: 300px;
 
   &:hover {
     box-shadow: 0 10px 30px 0 #a9adb5;
@@ -15,6 +15,8 @@
 .goods-card__prices {
   position: relative;
   min-height: 55px;
+  margin: 0;
+  padding: 0;
 }
 
 .goods-card__current-price {
@@ -40,12 +42,12 @@
   line-height: 26px;
   text-decoration: line-through;
   margin: 0;
-  padding: 0;
+  padding: 3px 0px 0px 0px;
 }
 
 .goods-card__discount {
   position: absolute;
-  top: 0;
+  top: -1px;
   right: -27px;
   display: inline-block;
   color: @clr_white;
@@ -55,8 +57,8 @@
   line-height: 26px;
   text-align: center;
   margin: 0;
-  padding: 1px 5px 1px 5px;
-  width: 50px;
+  padding: 0px 5px 2px 5px;
+  width: 51px;
   background-color: @clr_pink;
 }
 
